@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "sans-serif";
+
+  --color-naka-darkBlue: #0B1623;
+  --color-naka-cyan: #00D2FF;
+  --color-naka-ecoGreen: #56D364;
+  --color-naka-background: #FFFFFF;
+  --color-naka-text: #0F172A;
+
+  --color-surface: #f8f9fb;
+  --color-border-light: rgba(0, 0, 0, 0.06);
+  --color-border-subtle: rgba(0, 0, 0, 0.03);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-naka-background);
+  color: var(--color-naka-text);
+}
+
+::selection {
+  background-color: var(--color-naka-cyan);
+  color: var(--color-naka-darkBlue);
+}
