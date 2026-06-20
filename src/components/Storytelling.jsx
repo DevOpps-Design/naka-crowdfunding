@@ -7,18 +7,13 @@ export default function Storytelling() {
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-16 md:grid-cols-2">
             <div className="relative">
-              <div className="group relative">
-                <div className="absolute -inset-1 rounded-[2.5rem] bg-gradient-to-b from-naka-cyan/10 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
-                <div className="relative overflow-hidden rounded-[2.5rem] border border-black/[0.04] bg-surface p-2">
-                  <div className="overflow-hidden rounded-[calc(2.5rem-8px)]">
-                    <img
-                      src="/assets/Spiro.png"
-                      alt="Test terrain a Adidogome"
-                      className="h-full w-full object-cover transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
-                      style={{ aspectRatio: "1/1" }}
-                    />
-                  </div>
-                </div>
+              <div className="overflow-hidden rounded-2xl">
+                <img
+                  src="/assets/Spiro.png"
+                  alt="Test terrain a Adidogome"
+                  className="h-full w-full object-cover transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105"
+                  style={{ aspectRatio: "1/1" }}
+                />
               </div>
             </div>
 
