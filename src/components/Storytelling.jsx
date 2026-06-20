@@ -27,11 +27,11 @@ export default function Storytelling() {
                 Le constat
               </p>
               <h2 className="mb-6 text-3xl font-semibold tracking-tight text-naka-darkBlue md:text-4xl">
-                La livraison urbaine a Lome face a un double defi
+                La livraison urbaine à Lomé face à un double défi
               </h2>
               <p className="mb-8 text-base leading-relaxed text-naka-text/60">
-                Pollution de l'air croissante et precarite economique des
-                livreurs, lourdement impactes par les fluctuations du prix du
+                Pollution de l'air croissante et précarité économique des
+                livreurs, lourdement impactés par les fluctuations du prix du
                 carburant et l'absence d'outils d'optimisation.
               </p>
 
@@ -40,8 +40,8 @@ export default function Storytelling() {
                   La solution NAKA
                 </p>
                 <p className="text-base leading-relaxed text-naka-text/60">
-                  Nous deployons l'infrastructure logicielle qui connecte les
-                  jeunes conducteurs de motos electriques aux marches
+                  Nous déployons l'infrastructure logicielle qui connecte les
+                  jeunes conducteurs de motos électriques aux marchés
                   professionnels. Nos modules{" "}
                   <span className="font-medium text-naka-darkBlue">
                     Carbon Engine
@@ -50,9 +50,9 @@ export default function Storytelling() {
                   <span className="font-medium text-naka-darkBlue">
                     Carbon Converter
                   </span>{" "}
-                  mesurent precisement l'empreinte carbone evitee a chaque
-                  kilometre, tandis que notre modele inclusif permet a toute la
-                  jeunesse d'acceder a des revenus stables.
+                  mesurent précisément l'empreinte carbone évitée à chaque
+                  kilomètre, tandis que notre modèle inclusif permet à toute la
+                  jeunesse d'accéder à des revenus stables.
                 </p>
               </div>
 

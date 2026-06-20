@@ -20,12 +20,12 @@ export default function Hero() {
       <div className="relative mx-auto flex min-h-[100dvh] max-w-3xl flex-col items-center justify-center px-6 text-center md:px-8">
         <h1 className="max-w-2xl text-3xl font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
           Devenez acteur de la{" "}
-          <span className="text-naka-cyan">logistique decarbonee</span> au Togo.
+          <span className="text-naka-cyan">logistique décarbonée</span> au Togo.
         </h1>
 
         <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/50 md:text-base">
           Soutenez l'infrastructure technologique qui transforme la livraison
-          urbaine a Lome grace a la mobilite electrique.
+          urbaine à Lomé grâce à la mobilité électrique.
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">

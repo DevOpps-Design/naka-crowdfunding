@@ -1,4 +1,7 @@
 import ScrollReveal from "./ScrollReveal";
+import { withSource } from "../hooks/useSourceTracking";
+
+const REDIRECT = "https://soutien.naka.africa/merci";
 
 const tiers = [
   {
@@ -6,10 +9,10 @@ const tiers = [
     label: "FCFA",
     title: "Membre Pionnier",
     type: "B2C",
-    link: "https://direct.kkiapay.me/43978/membre-pionnier-M0QfpxnWa",
+    link: `https://direct.kkiapay.me/43978/membre-pionnier-M0QfpxnWa?redirect_url=${REDIRECT}`,
     perks: [
-      "Certificat numerique exclusif Pionnier de la transition",
-      "Nom grave sur le Mur des fondateurs dans l'app NAKA",
+      "Certificat numérique exclusif Pionnier de la transition",
+      "Nom gravé sur le Mur des fondateurs dans l'app NAKA",
     ],
     highlight: false,
   },
@@ -18,10 +21,10 @@ const tiers = [
     label: "FCFA",
     title: "Pack Early Adopter",
     type: "B2C",
-    link: "https://direct.kkiapay.me/43978/pack-early-adopter-sGgfnWk-U",
+    link: `https://direct.kkiapay.me/43978/pack-early-adopter-sGgfnWk-U?redirect_url=${REDIRECT}`,
     perks: [
       "Tous les avantages Membre Pionnier",
-      "15 livraisons de colis prepayees a vie sur Lome",
+      "15 livraisons de colis prépayées à vie sur Lomé",
       "Statut VIP dans l'app (priorite algorithmique)",
     ],
     highlight: true,
@@ -31,11 +34,11 @@ const tiers = [
     label: "FCFA",
     title: "Partenaire Entreprise",
     type: "B2B",
-    link: "https://direct.kkiapay.me/43978/partenaire-entreprise-oAjiJAFAH",
+    link: `https://direct.kkiapay.me/43978/partenaire-entreprise-oAjiJAFAH?redirect_url=${REDIRECT}`,
     perks: [
       "1 mois d'abonnement B2B offert",
-      "Acces complet au Carbon Converter",
-      "Certificat officiel d'economie de CO2 pour bilan RSE",
+      "Accès complet au Carbon Converter",
+      "Certificat officiel d'économie de CO2 pour bilan RSE",
     ],
     highlight: false,
   },
@@ -44,11 +47,11 @@ const tiers = [
     label: "FCFA",
     title: "Sponsor Gold",
     type: "B2B",
-    link: "https://direct.kkiapay.me/43978/sponsor-gold-250000-4qQrcdxjR",
+    link: `https://direct.kkiapay.me/43978/sponsor-gold-250000-4qQrcdxjR?redirect_url=${REDIRECT}`,
     perks: [
       "6 mois d'abonnement B2B premium",
       "Logo sur l'interface du Carbon Engine",
-      "Visibilite sur les caisses de livraison pendant 1 an",
+      "Visibilité sur les caisses de livraison pendant 1 an",
     ],
     highlight: false,
     badge: "Limite a 10 places",
@@ -65,7 +68,7 @@ export default function TierCards() {
               Choisissez votre impact
             </p>
             <h2 className="text-3xl font-semibold tracking-tight text-naka-darkBlue md:text-4xl">
-              Contribuez a la transition et recevez des contreparties
+              Contribuez à la transition et recevez des contreparties
             </h2>
           </div>
 
@@ -133,7 +136,7 @@ export default function TierCards() {
 
                 <div className="mt-auto flex justify-start pt-6">
                   <a
-                    href={t.link}
+                    href={withSource(t.link)}
                     
                     className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.98] ${
                       t.highlight

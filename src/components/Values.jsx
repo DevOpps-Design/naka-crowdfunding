@@ -3,17 +3,17 @@ import ScrollReveal from "./ScrollReveal";
 const values = [
   {
     title: "Logistique verte",
-    desc: "Un modele asset-light qui connecte les conducteurs de motos electriques aux marches professionnels, sans posseder de flottes.",
+    desc: "Un modèle asset-light qui connecte les conducteurs de motos électriques aux marchés professionnels, sans posséder de flottes.",
     accent: "cyan",
   },
   {
     title: "Inclusion des jeunes",
-    desc: "Nous permettons a la jeunesse de 18 a 35 ans d'acceder a des revenus stables et dignes, independamment du parcours academique.",
+    desc: "Nous permettons à la jeunesse de 18 à 35 ans d'accéder à des revenus stables et dignes, indépendamment du parcours académique.",
     accent: "cyan",
   },
   {
     title: "Suivi carbone",
-    desc: "Nos modules Carbon Engine et Carbon Converter mesurent precisement l'empreinte carbone evitee a chaque kilometre parcouru.",
+    desc: "Nos modules Carbon Engine et Carbon Converter mesurent précisément l'empreinte carbone évitée à chaque kilomètre parcouru.",
     accent: "green",
   },
 ];

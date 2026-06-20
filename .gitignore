@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.env
 *.local
 
 # Editor directories and files
@@ -27,3 +28,4 @@ agent.md
 cahier-de-charge.md
 planning.md
 dev-instructions.md
+Endpoint_crowfunding.md

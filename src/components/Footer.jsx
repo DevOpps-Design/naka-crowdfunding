@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { shareUrl } from "../hooks/useSourceTracking";
 
 export default function Footer() {
   return (
@@ -8,23 +9,27 @@ export default function Footer() {
           <div className="md:pr-8">
             <img src="/logo.png" alt="NAKA" className="mb-5 h-7 w-auto" />
             <p className="mb-6 text-sm leading-relaxed text-white/40">
-              Infrastructure logicielle pour la logistique urbaine decarbonee et
-              l'inclusion des jeunes au Togo.
+Infrastructure logicielle pour la logistique urbaine décarbonée et
+               l'inclusion des jeunes au Togo.
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href={shareUrl("whatsapp")}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/30 transition-all duration-300 hover:border-naka-cyan hover:text-naka-cyan"
-                aria-label="WhatsApp"
+                aria-label="Partager sur WhatsApp"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                 </svg>
               </a>
               <a
-                href="#"
+                href={shareUrl("linkedin")}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/30 transition-all duration-300 hover:border-naka-cyan hover:text-naka-cyan"
-                aria-label="LinkedIn"
+                aria-label="Partager sur LinkedIn"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -33,9 +38,11 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href={shareUrl("twitter")}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/30 transition-all duration-300 hover:border-naka-cyan hover:text-naka-cyan"
-                aria-label="Twitter X"
+                aria-label="Partager sur X"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
@@ -73,7 +80,7 @@ export default function Footer() {
 
           <div>
             <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.25em] text-white/20">
-              Nous ecrire
+              Nous écrire
             </p>
             <form className="flex flex-col gap-3">
               <div className="grid grid-cols-2 gap-3">
@@ -95,7 +102,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="group relative inline-flex items-center gap-2 self-start overflow-hidden rounded-xl bg-naka-cyan px-5 py-2.5 text-xs font-medium text-naka-darkBlue transition-all duration-300 hover:bg-white"
+                className="group relative inline-flex items-center gap-2 self-start overflow-hidden rounded-full bg-naka-cyan px-5 py-2.5 text-xs font-medium text-naka-darkBlue transition-all duration-300 hover:bg-white"
               >
                 <span>Envoyer</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="-translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">

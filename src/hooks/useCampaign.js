@@ -1,24 +1,32 @@
 import { useState, useEffect } from "react";
-import { doc, onSnapshot } from "firebase/firestore";
-import { db } from "../lib/firebase";
 
-const CAMPAIGN_DOC = "campaigns/naka-main";
+const ENDPOINT = "https://europe-west1-naka-ec3bf.cloudfunctions.net/getCrowdfundingTotal";
 const GOAL = 3_000_000;
 
 export function useCampaign() {
   const [campaign, setCampaign] = useState({
     totalAmount: 0,
     totalContributors: 0,
-    co2SavedKg: 0,
   });
 
+  const fetchCampaign = () => {
+    fetch(ENDPOINT)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          setCampaign({
+            totalAmount: data.totalAmount || 0,
+            totalContributors: data.totalContributors || 0,
+          });
+        }
+      })
+      .catch(() => {});
+  };
+
   useEffect(() => {
-    const unsub = onSnapshot(doc(db, CAMPAIGN_DOC), (snap) => {
-      if (snap.exists()) {
-        setCampaign(snap.data());
-      }
-    });
-    return () => unsub();
+    fetchCampaign();
+    const interval = setInterval(fetchCampaign, 30000);
+    return () => clearInterval(interval);
   }, []);
 
   const progress = Math.min((campaign.totalAmount / GOAL) * 100, 100);

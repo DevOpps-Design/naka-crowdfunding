@@ -1,16 +1,15 @@
 import ScrollReveal from "./ScrollReveal";
 import { useCounter } from "../hooks/useCounter";
+import { useCampaign } from "../hooks/useCampaign";
 
-const GOAL = 3_000_000;
+export default function ImpactGauge() {
+  const { campaign, progress, goal } = useCampaign();
+  const co2Kg = Math.round((campaign.totalAmount / 1000) * 2.4);
 
-export default function ImpactGauge({ totalAmount = 489_000, contributors = 23 }) {
-  const progress = Math.min((totalAmount / GOAL) * 100, 100);
-  const co2Kg = Math.round((totalAmount / 1000) * 2.4);
-
-  const [amount] = useCounter(totalAmount, 2200);
-  const [co2] = useCounter(co2Kg, 2200);
-  const [people] = useCounter(contributors, 1800);
-  const [pct] = useCounter(progress, 1800);
+  const amount = useCounter(campaign.totalAmount, 2200);
+  const co2 = useCounter(co2Kg, 2200);
+  const people = useCounter(campaign.totalContributors, 1800);
+  const pct = useCounter(progress, 1800);
 
   return (
     <ScrollReveal>
@@ -30,12 +29,12 @@ export default function ImpactGauge({ totalAmount = 489_000, contributors = 23 }
               <p className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
                 {amount.toLocaleString()}
               </p>
-              <p className="mt-1 text-sm text-white/40">FCFA collectes</p>
+              <p className="mt-1 text-sm text-white/40">FCFA collectés</p>
             </div>
             <div className="text-right">
               <p className="text-sm text-white/40">Objectif</p>
               <p className="text-lg font-medium text-white/80">
-                {GOAL.toLocaleString()} FCFA
+                {goal.toLocaleString()} FCFA
               </p>
             </div>
           </div>
@@ -52,7 +51,7 @@ export default function ImpactGauge({ totalAmount = 489_000, contributors = 23 }
               <span className="text-2xl font-semibold tracking-tight text-naka-ecoGreen">
                 {co2} kg
               </span>
-              <span className="text-sm text-white/40">CO2 evite</span>
+              <span className="text-sm text-white/40">CO2 évité</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-2xl font-semibold tracking-tight text-white">

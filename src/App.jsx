@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useSourceTracking } from "./hooks/useSourceTracking";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Values from "./components/Values";
@@ -10,8 +11,10 @@ import TierCards from "./components/TierCards";
 import Footer from "./components/Footer";
 import Privacy from "./components/Privacy";
 import Terms from "./components/Terms";
+import Thanks from "./components/Thanks";
 
 function Home() {
+  useSourceTracking();
   return (
     <>
       <Nav />
@@ -34,6 +37,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/merci" element={<Thanks />} />
         <Route path="/confidentialite" element={<Privacy />} />
         <Route path="/conditions" element={<Terms />} />
       </Routes>

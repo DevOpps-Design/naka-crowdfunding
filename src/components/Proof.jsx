@@ -3,19 +3,19 @@ import ScrollReveal from "./ScrollReveal";
 const proofs = [
   {
     title: "Validation terrain",
-    desc: "Test grandeur nature a Adidogome, Lome le 23 mai 2026. Performances techniques et donnees d'impact environnemental validees.",
+    desc: "Test grandeur nature à Adidogomé, Lomé le 23 mai 2026. Performances techniques et données d'impact environnemental validées.",
   },
   {
     title: "GITEX Africa 2025",
-    desc: "NAKA classee dans le TOP 10 des startups les plus prometteuses du continent africain.",
+    desc: "NAKA classée dans le TOP 10 des startups les plus prometteuses du continent africain.",
   },
   {
     title: "IYBA-SEED & CATAL1.5T",
-    desc: "Laurcat du programme Investing in Young Businesses in Africa et accompagne par l'accelerateur CATAL1.5T.",
+    desc: "Lauréat du programme Investing in Young Businesses in Africa et accompagné par l'accélérateur CATAL1.5T.",
   },
   {
     title: "AfricArena 2025",
-    desc: "Selection a AfricArena Climate Tech & FinTech a Nairobi, rayonnement continental confirme.",
+    desc: "Sélection à AfricArena Climate Tech & FinTech à Nairobi, rayonnement continental confirmé.",
   },
 ];
 
@@ -26,10 +26,10 @@ export default function Proof() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 text-center">
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.25em] text-naka-text/40">
-              Preuves & realisations
+              Preuves & réalisations
             </p>
             <h2 className="text-3xl font-semibold tracking-tight text-naka-darkBlue md:text-4xl">
-              Un modele valide, recompense et soutenu
+              Un modèle validé, récompensé et soutenu
             </h2>
           </div>
 
