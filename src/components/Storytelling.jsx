@@ -9,7 +9,7 @@ export default function Storytelling() {
             <div className="relative">
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src="/assets/Spiro.png"
+                  src="/assets/Spiro.webp"
                   alt="Test terrain a Adidogome"
                   className="h-full w-full object-cover transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105"
                   style={{ aspectRatio: "1/1" }}

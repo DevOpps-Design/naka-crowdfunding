@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="relative min-h-[100dvh] overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/assets/hero-img.png"
+          src="/assets/hero-img.webp"
           alt=""
           className="h-full w-full object-cover"
         />

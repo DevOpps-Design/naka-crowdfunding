@@ -7,15 +7,15 @@ const proofs = [
   },
   {
     title: "GITEX Africa 2025",
-    desc: "NAKA classée dans le TOP 10 des startups les plus prometteuses du continent africain.",
+    desc: "NAKA classée dans le TOP 10 des startups togolaises.",
   },
   {
     title: "IYBA-SEED & CATAL1.5T",
     desc: "Lauréat du programme Investing in Young Businesses in Africa et accompagné par l'accélérateur CATAL1.5T.",
   },
   {
-    title: "AfricArena 2025",
-    desc: "Sélection à AfricArena Climate Tech & FinTech à Nairobi, rayonnement continental confirmé.",
+    title: "AfricArena 2026",
+    desc: "Sélection dans le TOP 15 des startups africaines Climate Tech & FinTech à Nairobi pour le AfricArena.",
   },
 ];
 
