@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal";
 const members = [
   {
     name: "Odilon HOUNKPATI",
-    role: "Fondateur & CEO",
+    role: "Chief Executive Officer",
     image: "/assets/odilon.jpg",
   },
   {

@@ -19,8 +19,9 @@ export default function Hero() {
 
       <div className="relative mx-auto flex min-h-[100dvh] max-w-3xl flex-col items-center justify-center px-6 text-center md:px-8">
         <h1 className="max-w-2xl text-3xl font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-          Devenez acteur de la{" "}
-          <span className="text-naka-cyan">logistique décarbonée</span> au Togo.
+          Propulsons ensemble la{" "}
+          <span className="text-naka-cyan">logistique verte</span> et l'inclusion
+          des jeunes au Togo.
         </h1>
 
         <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/50 md:text-base">
