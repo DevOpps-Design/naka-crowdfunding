@@ -1,7 +1,7 @@
 import ScrollReveal from "./ScrollReveal";
 import { withSource } from "../hooks/useSourceTracking";
 
-const REDIRECT = "https://soutien.naka.africa/merci";
+const REDIRECT = "https://crowdfunding.naka-africa.com/merci";
 
 const tiers = [
   {

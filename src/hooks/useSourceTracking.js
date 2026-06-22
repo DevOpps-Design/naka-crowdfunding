@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://soutien.naka.africa";
+const SITE_URL = "https://crowdfunding.naka-africa.com";
 
 export function useSourceTracking() {
   useEffect(() => {
