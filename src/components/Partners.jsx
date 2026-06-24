@@ -19,13 +19,13 @@ export default function Partners() {
             </h2>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
+          <div className="flex items-center justify-center gap-6 md:gap-12">
             {partners.map((p) => (
               <div key={p.name} className="group">
                 <img
                   src={p.logo}
                   alt={p.name}
-                  className="h-auto max-h-10 max-w-36 opacity-40 grayscale transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-80 group-hover:grayscale-0 md:max-h-12 md:max-w-44"
+                  className="h-auto max-h-8 max-w-28 opacity-40 grayscale transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-80 group-hover:grayscale-0 md:max-h-12 md:max-w-44"
                 />
               </div>
             ))}
