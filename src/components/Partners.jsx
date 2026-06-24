@@ -4,6 +4,8 @@ const partners = [
   { name: "Spiro", logo: "/parterners/Spiro-logo.png" },
   { name: "CATAL1.5T", logo: "/parterners/CATAL1.5T-logo.png" },
   { name: "AfricArena", logo: "/parterners/AfricArise-logo.png" },
+  { name: "Freshyx", logo: "/parterners/freshyx-logo.png" },
+  { name: "IYBA", logo: "/parterners/IYBA_logo.png" },
 ];
 
 export default function Partners() {
