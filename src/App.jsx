@@ -8,6 +8,7 @@ import Storytelling from "./components/Storytelling";
 import Proof from "./components/Proof";
 import Team from "./components/Team";
 import TierCards from "./components/TierCards";
+import Partners from "./components/Partners";
 import Footer from "./components/Footer";
 import Privacy from "./components/Privacy";
 import Terms from "./components/Terms";
@@ -25,6 +26,7 @@ function Home() {
         <Storytelling />
         <Proof />
         <Team />
+        <Partners />
         <TierCards />
       </main>
       <Footer />
