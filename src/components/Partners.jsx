@@ -9,7 +9,7 @@ const partners = [
 export default function Partners() {
   return (
     <ScrollReveal>
-      <section className="bg-surface px-5 py-24 md:px-8 md:py-32">
+      <section className="bg-white px-5 py-24 md:px-8 md:py-32">
         <div className="mx-auto max-w-5xl">
           <div className="mb-16 text-center">
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.25em] text-naka-text/40">
@@ -26,7 +26,7 @@ export default function Partners() {
                 <img
                   src={p.logo}
                   alt={p.name}
-                  className="h-12 w-auto opacity-40 grayscale transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-80 group-hover:grayscale-0 md:h-14"
+                  className="h-auto max-h-10 max-w-36 opacity-40 grayscale transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-80 group-hover:grayscale-0 md:max-h-12 md:max-w-44"
                 />
               </div>
             ))}
