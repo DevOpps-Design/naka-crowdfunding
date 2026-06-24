@@ -9,14 +9,11 @@ const partners = [
 export default function Partners() {
   return (
     <ScrollReveal>
-      <section className="bg-white px-5 py-24 md:px-8 md:py-32">
+      <section className="bg-white px-5 py-12 md:px-8 md:py-16">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-16 text-center">
-            <p className="mb-4 text-xs font-medium uppercase tracking-[0.25em] text-naka-text/40">
+          <div className="mb-12 text-center">
+            <h2 className="text-2xl font-semibold tracking-tight text-naka-darkBlue md:text-3xl">
               Ils nous soutiennent
-            </p>
-            <h2 className="text-3xl font-semibold tracking-tight text-naka-darkBlue md:text-4xl">
-              Partenaires & accompagnateurs
             </h2>
           </div>
 
