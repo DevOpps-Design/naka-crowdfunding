@@ -5,7 +5,6 @@ const members = [
   { name: "member1", role: "member1_role", image: "/assets/odilon.jpg" },
   { name: "member2", role: "member2_role", image: "/assets/christ.jpg" },
   { name: "member3", role: "member3_role", image: "/assets/charles.jpg" },
-  { name: "member4", role: "member4_role", image: "/assets/freshyx.jpeg" },
 ];
 
 export default function Team() {
@@ -26,7 +25,7 @@ export default function Team() {
             </p>
           </div>
 
-          <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-4">
+          <div className="mx-auto grid max-w-4xl gap-12 md:grid-cols-3">
             {members.map((m, i) => (
               <div key={m.name}>
                 <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-surface">

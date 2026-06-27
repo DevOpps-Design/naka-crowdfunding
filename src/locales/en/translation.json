@@ -8,26 +8,26 @@
     "alt_logo": "NAKA"
   },
   "hero": {
-    "title_before": "Let's power",
+    "title_before": "Propelling",
     "title_highlight": "green logistics",
     "title_after": "and youth inclusion in Togo.",
-    "desc": "Support the tech infrastructure transforming urban delivery in Lomé through electric mobility.",
+    "desc": "Back the tech infrastructure that is transforming urban delivery in Lomé through electric mobility.",
     "cta_support": "Support the project",
-    "cta_impact": "Understand the impact"
+    "cta_impact": "See the impact"
   },
   "values": {
     "label": "Our approach",
     "title": "A tech infrastructure built for impact",
     "card1_title": "Green logistics",
-    "card1_desc": "An asset-light model connecting electric motorcycle riders to professional markets, without owning fleets.",
+    "card1_desc": "An asset-light model that connects electric motorcycle riders to professional markets — no fleet ownership required.",
     "card2_title": "Youth inclusion",
-    "card2_desc": "We enable youth aged 18–35 to access stable, dignified income regardless of academic background.",
+    "card2_desc": "We help young people aged 18–35 access stable, dignified income, regardless of their academic background.",
     "card3_title": "Carbon tracking",
-    "card3_desc": "Our Carbon Engine and Carbon Converter modules precisely measure the carbon footprint avoided per kilometer."
+    "card3_desc": "Our Carbon Engine and Carbon Converter modules measure the carbon footprint avoided per kilometer with precision."
   },
   "impact": {
     "label": "Live impact",
-    "title": "Together, let's build tomorrow's logistics",
+    "title": "Building the future of logistics, together",
     "collected": "FCFA raised",
     "goal": "Goal",
     "fcta": "FCFA",
@@ -38,8 +38,8 @@
   "story": {
     "alt": "Field test in Adidogomé",
     "label_constat": "The challenge",
-    "title": "Urban delivery in Lomé faces a double challenge",
-    "desc_constat": "Rising air pollution and economic precarity for riders, heavily impacted by fuel price fluctuations and the lack of optimization tools.",
+    "title": "Lomé's urban delivery faces a double challenge",
+    "desc_constat": "Rising air pollution and economic insecurity for riders, heavily impacted by fuel price volatility and a lack of optimization tools.",
     "label_solution": "The NAKA solution",
     "desc_solution": "We deploy the software infrastructure that connects young electric motorcycle riders to professional markets. Our Carbon Engine and Carbon Converter modules precisely measure the carbon footprint avoided per kilometer, while our inclusive model enables all youth to access stable income.",
     "highlight_engine": "Carbon Engine",
@@ -53,7 +53,7 @@
   },
   "proof": {
     "label": "Proof & achievements",
-    "title": "A validated, awarded, and supported model",
+    "title": "A proven, award-winning, and trusted model",
     "card1_title": "Field validation",
     "card1_desc": "Full-scale test in Adidogomé, Lomé on May 23, 2026. Technical performance and environmental impact data validated.",
     "card2_title": "GITEX Africa 2025",
@@ -65,23 +65,21 @@
   },
   "team": {
     "label": "Leadership team",
-    "title": "Passionate talents driving the transition",
-    "desc": "NAKA brings together tech, logistics, and climate enthusiasts united to decarbonize urban mobility in Togo. Meet the team behind this vision.",
+    "title": "The talent driving change",
+    "desc": "NAKA brings together tech, logistics, and climate enthusiasts united behind a single mission: decarbonizing urban mobility in Togo. Meet the people turning this vision into reality.",
     "member1_name": "Odilon HOUNKPATI",
     "member1_role": "Chief Executive Officer",
     "member2_name": "Christ Odéric YASSINGUEZO",
     "member2_role": "Chief Technology Officer",
     "member3_name": "Charles LEMOU",
-    "member3_role": "Lead Communication & Branding",
-    "member4_name": "FresH YX",
-    "member4_role": "Executive Office FresHyx"
+    "member3_role": "Lead Communication & Branding"
   },
   "partners": {
     "title": "Our supporters"
   },
   "tiers": {
-    "label": "Choose your impact",
-    "title": "Contribute to the transition and earn rewards",
+    "label": "Choose your contribution",
+    "title": "Support the transition and earn rewards",
     "badge_recommended": "Recommended",
     "badge_limited": "Limited to 10 spots",
     "type_b2c": "B2C",
@@ -129,7 +127,7 @@
   },
   "thanks": {
     "title": "Thank you for your support",
-    "desc": "Thanks to you, NAKA accelerates the deployment of decarbonized logistics in Lomé. You will receive your rewards by email within 48 hours.",
+    "desc": "Thanks to you, NAKA is accelerating the deployment of decarbonized logistics in Lomé. You will receive your rewards by email within 48 hours.",
     "co2_prefix": "That's",
     "co2_unit": "kg",
     "co2_label": "CO₂ avoided",
@@ -137,7 +135,7 @@
     "back": "Back to home"
   },
   "share": {
-    "default_text": "I support NAKA — decarbonized logistics in Togo. Together, let's build tomorrow's electric mobility."
+    "default_text": "I support NAKA — decarbonized logistics in Togo. Join us in building tomorrow's electric mobility."
   },
   "privacy": {
     "back": "Back",
@@ -197,7 +195,7 @@
         "title": "5. Recipients and Data Transfers",
         "intro": "Your data is accessible only to authorized NAKA personnel and the following service providers:",
         "items": [
-          "Kkiapay: payment provider (Togo/Benin) – for transaction processing",
+          "Kkiapay: payment provider (Togo/Benin) — for transaction processing",
           "Firebase (Google): hosting and database (European servers)",
           "Vercel / Netlify: website hosting (European servers)"
         ],
@@ -288,10 +286,10 @@
         "content1": "NAKA organizes a crowdfunding campaign to raise funds for the development and deployment of its software infrastructure dedicated to decarbonized urban logistics and youth inclusion in Togo. The fundraising goal is set at 3,000,000 FCFA (approximately 5,000 USD).",
         "content2": "The Campaign offers the following contribution tiers:",
         "items": [
-          "5,000 FCFA – \"Early Supporter\" badge + exclusive updates",
-          "25,000 FCFA – \"Early Supporter\" badge + privileged platform access",
-          "50,000 FCFA – \"Early Supporter\" badge + privileged access + branding pack",
-          "100,000 FCFA – \"Early Supporter\" badge + Co-founder token + API access + carbon report"
+          "5,000 FCFA — \"Early Supporter\" badge + exclusive updates",
+          "25,000 FCFA — \"Early Supporter\" badge + privileged platform access",
+          "50,000 FCFA — \"Early Supporter\" badge + privileged access + branding pack",
+          "100,000 FCFA — \"Early Supporter\" badge + Co-founder token + API access + carbon report"
         ],
         "b2b_note": "B2B tiers available upon request via the contact form"
       },
@@ -322,7 +320,7 @@
         "content2": "To exercise this right, the Contributor must:",
         "steps": [
           "Send a written request to: support@naka.africa",
-          "Specify their name, first name, contribution email address, amount, and transaction date",
+          "Specify their name, contribution email address, amount, and transaction date",
           "Provide the Kkiapay transaction reference"
         ],
         "content3": "The refund will be made within 14 working days using the same payment method used for the Contribution. After the withdrawal period, no refund request will be accepted, except in the event of non-delivery of the Reward within 90 days after the initially announced delivery date."
