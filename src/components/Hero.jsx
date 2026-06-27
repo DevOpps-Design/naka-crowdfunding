@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function Hero() {
+  const { t } = useTranslation();
   return (
     <section className="relative min-h-[100dvh] overflow-hidden">
       <div className="absolute inset-0">
@@ -19,14 +22,13 @@ export default function Hero() {
 
       <div className="relative mx-auto flex min-h-[100dvh] max-w-3xl flex-col items-center justify-center px-6 text-center md:px-8">
         <h1 className="max-w-2xl text-3xl font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-          Propulsons ensemble la{" "}
-          <span className="text-naka-cyan">logistique verte</span> et l'inclusion
-          des jeunes au Togo.
+          {t("hero.title_before")}{" "}
+          <span className="text-naka-cyan">{t("hero.title_highlight")}</span>{" "}
+          {t("hero.title_after")}
         </h1>
 
         <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/50 md:text-base">
-          Soutenez l'infrastructure technologique qui transforme la livraison
-          urbaine à Lomé grâce à la mobilité électrique.
+          {t("hero.desc")}
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
@@ -34,7 +36,7 @@ export default function Hero() {
             href="#paliers"
             className="group inline-flex items-center gap-2 rounded-full bg-naka-cyan px-6 py-3 text-sm font-semibold text-naka-darkBlue transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02] active:scale-[0.98]"
           >
-            Soutenir le projet
+            {t("hero.cta_support")}
             <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-naka-darkBlue/10 text-[11px] transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
               ↗
             </span>
@@ -43,7 +45,7 @@ export default function Hero() {
             href="#impact"
             className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white/70 backdrop-blur-sm transition-all duration-500 hover:border-white/30 hover:bg-white/10 hover:text-white"
           >
-            Comprendre l'impact
+            {t("hero.cta_impact")}
           </a>
         </div>
       </div>

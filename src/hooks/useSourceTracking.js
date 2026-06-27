@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import i18n from "../i18n";
 
 const SITE_URL = "https://crowdfunding.naka-africa.com";
 
@@ -25,8 +26,7 @@ export function withSource(url) {
 
 export function shareUrl(platform) {
   const url = SITE_URL;
-  const text =
-    "Je soutiens NAKA — la logistique décarbonée au Togo. Ensemble, construisons la mobilité électrique de demain.";
+  const text = i18n.t("share.default_text");
   const encodedUrl = encodeURIComponent(url);
   const encodedText = encodeURIComponent(text);
 

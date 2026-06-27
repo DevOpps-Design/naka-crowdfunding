@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
-
-const links = [
-  { label: "Impact", href: "#impact" },
-  { label: "Qui sommes-nous", href: "#about" },
-  { label: "Paliers", href: "#paliers" },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Nav() {
+  const { t } = useTranslation();
+  const links = [
+    { label: t("nav.impact"), href: "#impact" },
+    { label: t("nav.about"), href: "#about" },
+    { label: t("nav.tiers"), href: "#paliers" },
+  ];
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -29,14 +31,14 @@ export default function Nav() {
           <a href="#">
             <img
               src="/icon-logo.png"
-              alt="NAKA"
+              alt={t("nav.alt_logo")}
               className={`h-7 w-auto transition-all duration-500 ${
                 scrolled || open ? "" : "brightness-0 invert"
               }`}
             />
           </a>
 
-          <div className="hidden items-center gap-9 md:flex">
+          <div className="hidden items-center gap-6 md:flex">
             {links.map((l) => (
               <a
                 key={l.href}
@@ -58,14 +60,15 @@ export default function Nav() {
                   : "border border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20"
               }`}
             >
-              Soutenir
+              {t("nav.support")}
             </a>
+            <LanguageSwitcher light={!scrolled} />
           </div>
 
           <button
             onClick={() => setOpen(!open)}
             className="relative flex h-8 w-8 items-center justify-center md:hidden"
-            aria-label="Menu"
+            aria-label={t("nav.menu")}
           >
             <span
               className={`absolute h-[2px] w-5 rounded-full transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
@@ -120,8 +123,11 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="mt-4 rounded-full bg-naka-cyan px-8 py-3 text-lg font-medium text-naka-darkBlue"
           >
-            Soutenir
+            {t("nav.support")}
           </a>
+          <div className="mt-4">
+            <LanguageSwitcher light={false} />
+          </div>
         </div>
       )}
     </>

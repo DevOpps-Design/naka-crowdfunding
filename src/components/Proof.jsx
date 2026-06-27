@@ -1,35 +1,25 @@
+import { useTranslation } from "react-i18next";
 import ScrollReveal from "./ScrollReveal";
 
-const proofs = [
-  {
-    title: "Validation terrain",
-    desc: "Test grandeur nature à Adidogomé, Lomé le 23 mai 2026. Performances techniques et données d'impact environnemental validées.",
-  },
-  {
-    title: "GITEX Africa 2025",
-    desc: "NAKA classée dans le TOP 10 des startups togolaises.",
-  },
-  {
-    title: "IYBA-SEED & CATAL1.5T",
-    desc: "Lauréat du programme Investing in Young Businesses in Africa et accompagné par l'accélérateur CATAL1.5T.",
-  },
-  {
-    title: "AfricArena 2026",
-    desc: "Sélection dans le TOP 15 des startups africaines Climate Tech & FinTech à Nairobi pour le AfricArena.",
-  },
-];
-
 export default function Proof() {
+  const { t } = useTranslation();
+  const proofs = [
+    { title: t("proof.card1_title"), desc: t("proof.card1_desc") },
+    { title: t("proof.card2_title"), desc: t("proof.card2_desc") },
+    { title: t("proof.card3_title"), desc: t("proof.card3_desc") },
+    { title: t("proof.card4_title"), desc: t("proof.card4_desc") },
+  ];
+
   return (
     <ScrollReveal>
       <section className="bg-surface px-5 py-24 md:px-8 md:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 text-center">
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.25em] text-naka-text/40">
-              Preuves & réalisations
+              {t("proof.label")}
             </p>
             <h2 className="text-3xl font-semibold tracking-tight text-naka-darkBlue md:text-4xl">
-              Un modèle validé, récompensé et soutenu
+              {t("proof.title")}
             </h2>
           </div>
 

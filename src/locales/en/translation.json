@@ -1,0 +1,389 @@
+{
+  "nav": {
+    "impact": "Impact",
+    "about": "About Us",
+    "tiers": "Tiers",
+    "support": "Support",
+    "menu": "Menu",
+    "alt_logo": "NAKA"
+  },
+  "hero": {
+    "title_before": "Let's power",
+    "title_highlight": "green logistics",
+    "title_after": "and youth inclusion in Togo.",
+    "desc": "Support the tech infrastructure transforming urban delivery in Lomé through electric mobility.",
+    "cta_support": "Support the project",
+    "cta_impact": "Understand the impact"
+  },
+  "values": {
+    "label": "Our approach",
+    "title": "A tech infrastructure built for impact",
+    "card1_title": "Green logistics",
+    "card1_desc": "An asset-light model connecting electric motorcycle riders to professional markets, without owning fleets.",
+    "card2_title": "Youth inclusion",
+    "card2_desc": "We enable youth aged 18–35 to access stable, dignified income regardless of academic background.",
+    "card3_title": "Carbon tracking",
+    "card3_desc": "Our Carbon Engine and Carbon Converter modules precisely measure the carbon footprint avoided per kilometer."
+  },
+  "impact": {
+    "label": "Live impact",
+    "title": "Together, let's build tomorrow's logistics",
+    "collected": "FCFA raised",
+    "goal": "Goal",
+    "fcta": "FCFA",
+    "co2": "CO₂ avoided",
+    "contributors": "contributors",
+    "percent": "{{pct}}% of goal reached"
+  },
+  "story": {
+    "alt": "Field test in Adidogomé",
+    "label_constat": "The challenge",
+    "title": "Urban delivery in Lomé faces a double challenge",
+    "desc_constat": "Rising air pollution and economic precarity for riders, heavily impacted by fuel price fluctuations and the lack of optimization tools.",
+    "label_solution": "The NAKA solution",
+    "desc_solution": "We deploy the software infrastructure that connects young electric motorcycle riders to professional markets. Our Carbon Engine and Carbon Converter modules precisely measure the carbon footprint avoided per kilometer, while our inclusive model enables all youth to access stable income.",
+    "highlight_engine": "Carbon Engine",
+    "highlight_converter": "Carbon Converter",
+    "stat_date": "May 23",
+    "stat_field": "Field validation",
+    "stat_rank": "TOP 10",
+    "stat_gitex": "GITEX Africa 2025",
+    "stat_value": "600K USD",
+    "stat_valuation": "Valuation"
+  },
+  "proof": {
+    "label": "Proof & achievements",
+    "title": "A validated, awarded, and supported model",
+    "card1_title": "Field validation",
+    "card1_desc": "Full-scale test in Adidogomé, Lomé on May 23, 2026. Technical performance and environmental impact data validated.",
+    "card2_title": "GITEX Africa 2025",
+    "card2_desc": "NAKA ranked in the TOP 10 Togolese startups.",
+    "card3_title": "IYBA-SEED & CATAL1.5T",
+    "card3_desc": "Winner of the Investing in Young Businesses in Africa program and accelerated by CATAL1.5T.",
+    "card4_title": "AfricArena 2026",
+    "card4_desc": "Selected in the TOP 15 African Climate Tech & FinTech startups in Nairobi for AfricArena."
+  },
+  "team": {
+    "label": "Leadership team",
+    "title": "Passionate talents driving the transition",
+    "desc": "NAKA brings together tech, logistics, and climate enthusiasts united to decarbonize urban mobility in Togo. Meet the team behind this vision.",
+    "member1_name": "Odilon HOUNKPATI",
+    "member1_role": "Chief Executive Officer",
+    "member2_name": "Christ Odéric YASSINGUEZO",
+    "member2_role": "Chief Technology Officer",
+    "member3_name": "Charles LEMOU",
+    "member3_role": "Lead Communication & Branding",
+    "member4_name": "FresH YX",
+    "member4_role": "Executive Office FresHyx"
+  },
+  "partners": {
+    "title": "Our supporters"
+  },
+  "tiers": {
+    "label": "Choose your impact",
+    "title": "Contribute to the transition and earn rewards",
+    "badge_recommended": "Recommended",
+    "badge_limited": "Limited to 10 spots",
+    "type_b2c": "B2C",
+    "type_b2b": "B2B",
+    "fcta": "FCFA",
+    "tier1_title": "Pioneer Member",
+    "tier1_amount": "10,000",
+    "tier1_perk1": "Exclusive digital Pioneer of the Transition certificate",
+    "tier1_perk2": "Name engraved on the Founders' Wall in the NAKA app",
+    "tier2_title": "Early Adopter Pack",
+    "tier2_amount": "25,000",
+    "tier2_perk1": "All Pioneer Member benefits",
+    "tier2_perk2": "15 prepaid parcel deliveries for life in Lomé",
+    "tier2_perk3": "VIP status in the app (algorithmic priority)",
+    "tier3_title": "Enterprise Partner",
+    "tier3_amount": "50,000",
+    "tier3_perk1": "1 month free B2B subscription",
+    "tier3_perk2": "Full access to Carbon Converter",
+    "tier3_perk3": "Official CO₂ savings certificate for CSR reporting",
+    "tier4_title": "Gold Sponsor",
+    "tier4_amount": "250,000",
+    "tier4_perk1": "6 months premium B2B subscription",
+    "tier4_perk2": "Logo on the Carbon Engine interface",
+    "tier4_perk3": "Visibility on delivery boxes for 1 year",
+    "support": "Support"
+  },
+  "footer": {
+    "alt_logo": "NAKA",
+    "desc": "Software infrastructure for decarbonized urban logistics and youth inclusion in Togo.",
+    "whatsapp": "Share on WhatsApp",
+    "linkedin": "Share on LinkedIn",
+    "twitter": "Share on X",
+    "nav_title": "Navigation",
+    "nav_impact": "Impact",
+    "nav_team": "Team",
+    "nav_tiers": "Tiers",
+    "contact_title": "Contact us",
+    "name_placeholder": "Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Your message",
+    "send": "Send",
+    "copyright": "© {{year}} NAKA. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "thanks": {
+    "title": "Thank you for your support",
+    "desc": "Thanks to you, NAKA accelerates the deployment of decarbonized logistics in Lomé. You will receive your rewards by email within 48 hours.",
+    "co2_prefix": "That's",
+    "co2_unit": "kg",
+    "co2_label": "CO₂ avoided",
+    "share_title": "Share the campaign",
+    "back": "Back to home"
+  },
+  "share": {
+    "default_text": "I support NAKA — decarbonized logistics in Togo. Together, let's build tomorrow's electric mobility."
+  },
+  "privacy": {
+    "back": "Back",
+    "title": "Privacy Policy",
+    "updated": "Last updated: June 19, 2026",
+    "sections": {
+      "preamble": {
+        "title": "1. Preamble",
+        "content": "NAKA (hereinafter \"the Company\", \"we\", \"our\", \"us\") places the utmost importance on protecting the personal data of its users, partners, investors, and website visitors. This Privacy Policy aims to inform any natural or legal person about how we collect, use, share, and protect personal data, in accordance with the General Data Protection Regulation (GDPR) of the European Union, Law No. 2018-012 on the protection of personal data in the Republic of Togo, and the guiding principles of the African Union on cybersecurity and data protection."
+      },
+      "controller": {
+        "title": "2. Identity of the Data Controller",
+        "intro": "The data controller is:",
+        "company": "NAKA SARL",
+        "address": "Lomé, Togo",
+        "email": "Email: privacy@naka.africa"
+      },
+      "data": {
+        "title": "3. Data Collected",
+        "intro": "We collect the following categories of data:",
+        "direct_title": "3.1 Data provided directly",
+        "direct_items": [
+          "Identification data: last name, first name, email address, phone number",
+          "Payment data: transaction information via our provider Kkiapay (no sensitive banking data is stored by NAKA)",
+          "Profile data: professional organization, sector of activity, interests",
+          "Communications: messages exchanged via our contact form or any other channel"
+        ],
+        "auto_title": "3.2 Automatically collected data",
+        "auto_items": [
+          "Browsing data: IP address, browser type, operating system, pages visited, session duration",
+          "Approximate location data (country level only)",
+          "Technical and analytical cookies necessary for the functioning of the site",
+          "Source of origin (URL parameters, marketing campaign)"
+        ],
+        "crowdfunding_title": "3.3 Crowdfunding campaign data",
+        "crowdfunding_items": [
+          "Amount and date of each contribution",
+          "Tier chosen and selected rewards",
+          "Payment method used (via Kkiapay)",
+          "Transaction status and history"
+        ]
+      },
+      "legal": {
+        "title": "4. Legal Basis and Purposes of Processing",
+        "intro": "We process your data on the following legal bases:",
+        "table_headers": ["Purpose", "Legal basis"],
+        "table_rows": [
+          ["Payment processing and contribution tracking", "Contract performance"],
+          ["Communication and response to requests", "Legitimate interest"],
+          ["Sending marketing communications (with consent)", "Consent"],
+          ["Audience analysis and site improvement", "Legitimate interest"],
+          ["Legal and regulatory compliance", "Legal obligation"],
+          ["Fraud prevention and transaction security", "Legitimate interest"]
+        ]
+      },
+      "recipients": {
+        "title": "5. Recipients and Data Transfers",
+        "intro": "Your data is accessible only to authorized NAKA personnel and the following service providers:",
+        "items": [
+          "Kkiapay: payment provider (Togo/Benin) – for transaction processing",
+          "Firebase (Google): hosting and database (European servers)",
+          "Vercel / Netlify: website hosting (European servers)"
+        ],
+        "outro": "These providers are contractually bound to comply with strict confidentiality standards compliant with the GDPR. In case of data transfer outside the European Union or the African Union, we ensure adequate safeguards are in place (standard contractual clauses, adequacy decisions)."
+      },
+      "retention": {
+        "title": "6. Retention Period",
+        "intro": "We retain your personal data for the period necessary to fulfill the purposes for which they were collected, in accordance with legal obligations:",
+        "items": [
+          "Account and contribution data: 5 years after the last activity (accounting and tax obligations)",
+          "Browsing data and analytical cookies: 13 months maximum",
+          "Marketing prospecting data: 3 years after the last contact",
+          "Transaction data: 10 years (legal obligation)"
+        ]
+      },
+      "rights": {
+        "title": "7. Your Rights",
+        "intro": "In accordance with applicable regulations, you have the following rights:",
+        "items": [
+          { "title": "Right of access (Art. 15 GDPR)", "desc": "Obtain confirmation that your data is processed and receive a copy" },
+          { "title": "Right to rectification (Art. 16 GDPR)", "desc": "Request correction of inaccurate or incomplete data" },
+          { "title": "Right to erasure (Art. 17 GDPR)", "desc": "Request deletion of your data subject to legal obligations" },
+          { "title": "Right to restriction (Art. 18 GDPR)", "desc": "Temporarily restrict the processing of your data" },
+          { "title": "Right to data portability (Art. 20 GDPR)", "desc": "Receive your data in a structured, readable format" },
+          { "title": "Right to object (Art. 21 GDPR)", "desc": "Object to processing for legitimate reasons or for prospecting purposes" },
+          { "title": "Right to withdraw consent", "desc": "At any time, without affecting the lawfulness of prior processing" },
+          { "title": "Right to define directives", "desc": "Regarding the fate of your data after your death" }
+        ],
+        "outro": "To exercise your rights, contact us at: privacy@naka.africa. We commit to responding within 30 days. If the response is unsatisfactory, you have the right to file a complaint with the competent supervisory authority (Togolese Data Protection Commission or CNIL depending on your jurisdiction)."
+      },
+      "cookies": {
+        "title": "8. Cookies and Similar Technologies",
+        "intro": "Our site uses cookies strictly necessary for its operation and analytical cookies to measure audience. On your first visit, a banner informs you and collects your consent for non-essential cookies.",
+        "types_title": "Types of cookies used:",
+        "types": [
+          "Functional cookies: necessary for site operation (session, cart)",
+          "Analytical cookies: anonymized audience measurements (Google Analytics configured without data sharing)",
+          "Campaign cookies: visitor source tracking (?source=whatsapp, ?source=linkedin)"
+        ]
+      },
+      "security": {
+        "title": "9. Data Security",
+        "content": "We implement all appropriate technical and organizational measures to ensure a level of security adapted to the risk, including: encryption of transmissions via TLS 1.3, multi-factor authentication for data access, pseudonymization where possible, regular backups, and periodic testing and evaluation procedures for the effectiveness of security measures. In the event of a data breach, we commit to notifying the competent supervisory authority within 72 hours and informing affected individuals if the risk is high."
+      },
+      "minors": {
+        "title": "10. Minors' Data",
+        "content": "Our services are not intended for individuals under 15 years of age without the consent of a parental authority holder. We do not knowingly collect data from minors. If you believe a minor has provided us with data without parental consent, please contact us immediately."
+      },
+      "changes": {
+        "title": "11. Policy Changes",
+        "content": "We reserve the right to modify this policy at any time. Substantial changes will be notified to you by email or via an information banner on our site. We encourage you to regularly check this page for any updates."
+      },
+      "contact": {
+        "title": "12. Contact and Complaints",
+        "intro": "For any questions regarding this policy or the exercise of your rights, you can contact us:",
+        "company": "NAKA SARL",
+        "email": "Email: privacy@naka.africa",
+        "dpo": "DPO: dpo@naka.africa",
+        "outro": "If you believe your rights have not been respected, you may file a complaint with the competent supervisory authority of your country of residence or of Togo."
+      }
+    }
+  },
+  "terms": {
+    "back": "Back",
+    "title": "Terms and Conditions of Use and Participation",
+    "updated": "Last updated: June 19, 2026",
+    "sections": {
+      "object": {
+        "title": "1. Purpose and Acceptance of Terms",
+        "content1": "These Terms and Conditions (hereinafter \"T&Cs\") govern access to and use of the website accessible at crowdfunding.naka-africa.com (hereinafter the \"Site\"), as well as the terms of participation in the crowdfunding campaign organized by NAKA SARL.",
+        "content2": "By accessing the Site, browsing it, or making a financial contribution, you acknowledge having read these terms and accept them fully and without reservation. If you do not accept these terms, please do not use the Site or participate in the campaign.",
+        "content3": "NAKA reserves the right to modify these terms at any time. Modifications take effect upon their publication on the Site. It is your responsibility to regularly review the T&Cs."
+      },
+      "definitions": {
+        "title": "2. Definitions",
+        "intro": "In these terms:",
+        "items": [
+          "\"Campaign\": refers to the fundraising period from June 25, 2026 to the closing date announced on the Site",
+          "\"Contributor\": any natural or legal person who has made a payment as part of the Campaign",
+          "\"Contribution\": the amount paid by the Contributor, excluding transaction fees",
+          "\"Reward\": the good or service offered by NAKA in recognition of a Contribution, according to the chosen tier",
+          "\"Platform\": NAKA's technical and software infrastructure",
+          "\"Kkiapay\": the third-party payment service provider used for transaction processing"
+        ]
+      },
+      "campaign": {
+        "title": "3. Campaign Description",
+        "content1": "NAKA organizes a crowdfunding campaign to raise funds for the development and deployment of its software infrastructure dedicated to decarbonized urban logistics and youth inclusion in Togo. The fundraising goal is set at 3,000,000 FCFA (approximately 5,000 USD).",
+        "content2": "The Campaign offers the following contribution tiers:",
+        "items": [
+          "5,000 FCFA – \"Early Supporter\" badge + exclusive updates",
+          "25,000 FCFA – \"Early Supporter\" badge + privileged platform access",
+          "50,000 FCFA – \"Early Supporter\" badge + privileged access + branding pack",
+          "100,000 FCFA – \"Early Supporter\" badge + Co-founder token + API access + carbon report"
+        ],
+        "b2b_note": "B2B tiers available upon request via the contact form"
+      },
+      "payment": {
+        "title": "4. Payment Terms",
+        "intro": "Contributions are made exclusively via the Kkiapay payment provider, accessible from the Site. Accepted payment methods are:",
+        "items": [
+          "Mobile Money (Togo, Benin, Côte d'Ivoire, Senegal, Burkina Faso, Mali, Niger)",
+          "International bank cards (Visa, Mastercard)"
+        ],
+        "content2": "The Contributor guarantees that they are the legitimate holder of the payment method used and that funds are available. Any fraudulent or unauthorized transaction will result in cancellation of the Contribution and may lead to legal prosecution.",
+        "content3": "Transaction fees applied by Kkiapay are borne by NAKA for Mobile Money payments and by the Contributor for international bank card payments."
+      },
+      "contribution": {
+        "title": "5. Contribution Conditions",
+        "intro": "By making a Contribution, the Contributor expressly acknowledges and accepts that:",
+        "items": [
+          "Their Contribution is voluntary and constitutes financial support for NAKA's mission",
+          "The Rewards described on the Site constitute a unilateral promise by NAKA and not an obligation of result",
+          "NAKA undertakes to deploy all reasonable means to honor the Rewards within the announced timelines",
+          "In the event of Campaign failure (goal not reached), Contributions will be fully refunded within 30 working days, less non-recoverable transaction fees",
+          "In the event of Campaign success but impossibility to deliver Rewards due to force majeure, NAKA will offer an alternative Reward of equivalent value"
+        ]
+      },
+      "withdrawal": {
+        "title": "6. Right of Withdrawal and Refund",
+        "content1": "In accordance with applicable regulations on distance selling and the provisions of the OHADA Uniform Act on general commercial law, the Contributor has a withdrawal period of fourteen (14) calendar days from the date of their Contribution to request a full refund, without reason and without penalty.",
+        "content2": "To exercise this right, the Contributor must:",
+        "steps": [
+          "Send a written request to: support@naka.africa",
+          "Specify their name, first name, contribution email address, amount, and transaction date",
+          "Provide the Kkiapay transaction reference"
+        ],
+        "content3": "The refund will be made within 14 working days using the same payment method used for the Contribution. After the withdrawal period, no refund request will be accepted, except in the event of non-delivery of the Reward within 90 days after the initially announced delivery date."
+      },
+      "ip": {
+        "title": "7. Intellectual Property",
+        "content1": "All content on the Site (texts, graphics, logos, icons, images, videos, source code, databases) is the exclusive property of NAKA SARL or its partners and is protected by copyright, trademark law, and the provisions of the OHADA Uniform Act on intellectual property law.",
+        "content2": "Any reproduction, representation, modification, exploitation, or distribution of all or part of the Site without NAKA's prior written authorization is prohibited and would constitute infringement subject to civil and criminal liability.",
+        "content3": "NAKA's trademarks, trade names, and logos (including \"NAKA\", \"Carbon Engine\", \"Carbon Converter\") are registered and protected trademarks. Any use without express authorization is strictly prohibited."
+      },
+      "liability": {
+        "title": "8. Liability",
+        "intro": "NAKA undertakes to implement all reasonable means to ensure the availability and security of the Site. However, NAKA cannot be held responsible for:",
+        "items": [
+          "Temporary interruptions of the Site for maintenance operations",
+          "Indirect damages, loss of business, loss of data or customers",
+          "Consequences of force majeure as defined by the case law of the Common Court of Justice and Arbitration (CCJA) of OHADA",
+          "Acts of hacking or malicious intrusion despite the implementation of security measures in accordance with the state of the art",
+          "Content accessible via hypertext links pointing to third-party sites"
+        ],
+        "outro": "NAKA's liability is, in any case, strictly limited to the amount of the Contribution paid by the affected Contributor. No action may be brought against NAKA more than one (1) year after the event giving rise to the dispute."
+      },
+      "guarantees": {
+        "title": "9. Contributor Guarantees",
+        "intro": "The Contributor declares and guarantees:",
+        "items": [
+          "Being at least 18 years old or having the authorization of a legal representative",
+          "Having the necessary legal capacity to contract",
+          "Providing accurate, complete, and up-to-date information when making their Contribution",
+          "Not using the Site for fraudulent or illegal purposes",
+          "Not engaging in money laundering or terrorist financing activities",
+          "Not attempting to circumvent the security measures of the Site or the Platform"
+        ]
+      },
+      "personal_data": {
+        "title": "10. Personal Data",
+        "content": "The processing of personal data of Contributors and Site visitors is governed by our Privacy Policy, available at crowdfunding.naka-africa.com/privacy and forming an integral part of these terms."
+      },
+      "jurisdiction": {
+        "title": "11. Applicable Law and Jurisdiction",
+        "content1": "These terms are governed by Togolese law, in accordance with the provisions of the OHADA Uniform Act on general commercial law and Law No. 2018-012 on the protection of personal data.",
+        "content2": "For Contributors who are nationals of the European Union, mandatory provisions of the law of their country of residence may apply if they offer a higher level of protection.",
+        "content3": "Any dispute relating to the interpretation, execution, or validity of these terms shall be submitted, failing an amicable solution within thirty (30) days, to the exclusive jurisdiction of:",
+        "items": [
+          "The Commercial Court of Lomé (Togo) for commercial law disputes",
+          "The Common Court of Justice and Arbitration (CCJA) of OHADA for disputes involving parties from different member states",
+          "The Center for Arbitration and Mediation of Togo (CAMeT) for disputes subject to arbitration"
+        ],
+        "outro": "The parties undertake to seek an amicable solution before any legal action. To this end, any claim must be sent in writing to NAKA, which undertakes to respond within fifteen (15) working days."
+      },
+      "nullity": {
+        "title": "12. Nullity and Waiver",
+        "content": "If any of the provisions of these terms is declared null or unenforceable by a court decision, the other provisions shall remain in force. NAKA's failure to enforce a breach of these terms does not constitute a waiver of the right to enforce them later."
+      },
+      "contact": {
+        "title": "13. Information and Contact",
+        "intro": "For any questions regarding these terms, please contact us:",
+        "company": "NAKA SARL",
+        "email": "Email: legal@naka.africa",
+        "support": "Technical support: support@naka.africa"
+      }
+    }
+  }
+}

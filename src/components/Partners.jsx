@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import ScrollReveal from "./ScrollReveal";
 
 const partners = [
@@ -9,13 +10,14 @@ const partners = [
 ];
 
 export default function Partners() {
+  const { t } = useTranslation();
   return (
     <ScrollReveal>
       <section className="bg-white px-5 py-12 md:px-8 md:py-16">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 text-center">
             <h2 className="text-2xl font-semibold tracking-tight text-naka-darkBlue md:text-3xl">
-              Ils nous soutiennent
+              {t("partners.title")}
             </h2>
           </div>
 

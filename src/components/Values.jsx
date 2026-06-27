@@ -1,34 +1,36 @@
 import ScrollReveal from "./ScrollReveal";
-
-const values = [
-  {
-    title: "Logistique verte",
-    desc: "Un modèle asset-light qui connecte les conducteurs de motos électriques aux marchés professionnels, sans posséder de flottes.",
-    accent: "cyan",
-  },
-  {
-    title: "Inclusion des jeunes",
-    desc: "Nous permettons à la jeunesse de 18 à 35 ans d'accéder à des revenus stables et dignes, indépendamment du parcours académique.",
-    accent: "cyan",
-  },
-  {
-    title: "Suivi carbone",
-    desc: "Nos modules Carbon Engine et Carbon Converter mesurent précisément l'empreinte carbone évitée à chaque kilomètre parcouru.",
-    accent: "green",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Values() {
+  const { t } = useTranslation();
+  const values = [
+    {
+      title: t("values.card1_title"),
+      desc: t("values.card1_desc"),
+      accent: "cyan",
+    },
+    {
+      title: t("values.card2_title"),
+      desc: t("values.card2_desc"),
+      accent: "cyan",
+    },
+    {
+      title: t("values.card3_title"),
+      desc: t("values.card3_desc"),
+      accent: "green",
+    },
+  ];
+
   return (
     <ScrollReveal>
       <section className="bg-white px-5 py-24 md:px-8 md:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.25em] text-naka-text/40">
-              Notre approche
+              {t("values.label")}
             </p>
             <h2 className="text-3xl font-semibold tracking-tight text-naka-darkBlue md:text-4xl">
-              Une infrastructure technologique au service de l'impact
+              {t("values.title")}
             </h2>
           </div>
 

@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { shareUrl } from "../hooks/useSourceTracking";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-naka-darkBlue px-5 py-16 md:px-8 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 grid gap-16 md:grid-cols-3">
           <div className="md:pr-8">
-            <img src="/logo.png" alt="NAKA" className="mb-5 h-7 w-auto" />
+            <img src="/logo.png" alt={t("footer.alt_logo")} className="mb-5 h-7 w-auto" />
             <p className="mb-6 text-sm leading-relaxed text-white/40">
-Infrastructure logicielle pour la logistique urbaine décarbonée et
-               l'inclusion des jeunes au Togo.
+              {t("footer.desc")}
             </p>
             <div className="flex gap-4">
               <a
@@ -18,7 +19,7 @@ Infrastructure logicielle pour la logistique urbaine décarbonée et
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/30 transition-all duration-300 hover:border-naka-cyan hover:text-naka-cyan"
-                aria-label="Partager sur WhatsApp"
+                aria-label={t("footer.whatsapp")}
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
@@ -29,7 +30,7 @@ Infrastructure logicielle pour la logistique urbaine décarbonée et
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/30 transition-all duration-300 hover:border-naka-cyan hover:text-naka-cyan"
-                aria-label="Partager sur LinkedIn"
+                aria-label={t("footer.linkedin")}
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -42,7 +43,7 @@ Infrastructure logicielle pour la logistique urbaine décarbonée et
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/30 transition-all duration-300 hover:border-naka-cyan hover:text-naka-cyan"
-                aria-label="Partager sur X"
+                aria-label={t("footer.twitter")}
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
@@ -54,57 +55,57 @@ Infrastructure logicielle pour la logistique urbaine décarbonée et
 
           <div>
             <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.25em] text-white/20">
-              Navigation
+              {t("footer.nav_title")}
             </p>
             <div className="flex flex-col gap-3">
               <a
                 href="#impact"
                 className="text-sm text-white/50 transition-all duration-300 hover:translate-x-1 hover:text-white"
               >
-                Impact
+                {t("footer.nav_impact")}
               </a>
               <a
                 href="#about"
                 className="text-sm text-white/50 transition-all duration-300 hover:translate-x-1 hover:text-white"
               >
-                Equipe
+                {t("footer.nav_team")}
               </a>
               <a
                 href="#paliers"
                 className="text-sm text-white/50 transition-all duration-300 hover:translate-x-1 hover:text-white"
               >
-                Paliers
+                {t("footer.nav_tiers")}
               </a>
             </div>
           </div>
 
           <div>
             <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.25em] text-white/20">
-              Nous écrire
+              {t("footer.contact_title")}
             </p>
             <form className="flex flex-col gap-3">
               <div className="grid grid-cols-2 gap-3">
                 <input
                   type="text"
-                  placeholder="Nom"
+                  placeholder={t("footer.name_placeholder")}
                   className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder-white/20 outline-none transition-all duration-300 focus:border-naka-cyan focus:bg-white/[0.06]"
                 />
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder={t("footer.email_placeholder")}
                   className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder-white/20 outline-none transition-all duration-300 focus:border-naka-cyan focus:bg-white/[0.06]"
                 />
               </div>
               <textarea
                 rows={3}
-                placeholder="Votre message"
+                placeholder={t("footer.message_placeholder")}
                 className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder-white/20 outline-none transition-all duration-300 focus:border-naka-cyan focus:bg-white/[0.06]"
               />
               <button
                 type="submit"
                 className="group relative inline-flex items-center gap-2 self-start overflow-hidden rounded-full bg-naka-cyan px-5 py-2.5 text-xs font-medium text-naka-darkBlue transition-all duration-300 hover:bg-white"
               >
-                <span>Envoyer</span>
+                <span>{t("footer.send")}</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="-translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                   <line x1="22" y1="2" x2="11" y2="13" />
                   <polygon points="22 2 15 22 11 13 2 9 22 2" />
@@ -116,14 +117,14 @@ Infrastructure logicielle pour la logistique urbaine décarbonée et
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-8 md:flex-row">
           <p className="text-xs text-white/20">
-            &copy; {new Date().getFullYear()} NAKA. Tous droits reserves.
+            {t("footer.copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex gap-6">
             <Link to="/confidentialite" className="text-xs text-white/20 transition-colors duration-300 hover:text-white/50">
-              Confidentialite
+              {t("footer.privacy")}
             </Link>
             <Link to="/conditions" className="text-xs text-white/20 transition-colors duration-300 hover:text-white/50">
-              Conditions
+              {t("footer.terms")}
             </Link>
           </div>
         </div>

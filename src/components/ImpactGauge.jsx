@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import ScrollReveal from "./ScrollReveal";
 import { useCounter } from "../hooks/useCounter";
 import { useCampaign } from "../hooks/useCampaign";
 
 export default function ImpactGauge() {
+  const { t } = useTranslation();
   const { campaign, progress, goal } = useCampaign();
   const co2Kg = Math.round((campaign.totalAmount / 1000) * 2.4);
 
@@ -17,10 +19,10 @@ export default function ImpactGauge() {
         <div className="mx-auto max-w-4xl">
           <div className="mb-16 text-center">
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.25em] text-white/40">
-              Impact en temps reel
+              {t("impact.label")}
             </p>
             <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
-              Ensemble, construisons la logistique de demain
+              {t("impact.title")}
             </h2>
           </div>
 
@@ -29,12 +31,12 @@ export default function ImpactGauge() {
               <p className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
                 {amount.toLocaleString()}
               </p>
-              <p className="mt-1 text-sm text-white/40">FCFA collectés</p>
+              <p className="mt-1 text-sm text-white/40">{t("impact.collected")}</p>
             </div>
             <div className="text-right">
-              <p className="text-sm text-white/40">Objectif</p>
+              <p className="text-sm text-white/40">{t("impact.goal")}</p>
               <p className="text-lg font-medium text-white/80">
-                {goal.toLocaleString()} FCFA
+                {goal.toLocaleString()} {t("impact.fcta")}
               </p>
             </div>
           </div>
@@ -51,19 +53,16 @@ export default function ImpactGauge() {
               <span className="text-2xl font-semibold tracking-tight text-naka-ecoGreen">
                 {co2} kg
               </span>
-              <span className="text-sm text-white/40">CO2 évité</span>
+              <span className="text-sm text-white/40">{t("impact.co2")}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-2xl font-semibold tracking-tight text-white">
                 {people}
               </span>
-              <span className="text-sm text-white/40">contributeurs</span>
+              <span className="text-sm text-white/40">{t("impact.contributors")}</span>
             </div>
             <div className="text-sm text-white/40">
-              <span className="font-medium text-white/80">
-                {pct.toFixed(1)}%
-              </span>{" "}
-              de l'objectif atteint
+              {t("impact.percent", { pct: `${pct.toFixed(1)}%` })}
             </div>
           </div>
         </div>
