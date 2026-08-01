@@ -1,0 +1,169 @@
+import { useTranslation } from "react-i18next";
+import ScrollReveal from "./ScrollReveal";
+import { withSource } from "../hooks/useSourceTracking";
+
+const REDIRECT = "https://naka-africa.com/merci";
+
+const b2c = [
+  {
+    amount: "tier0_amount",
+    title: "tier0_title",
+    type: "B2C",
+    link: `https://direct.kkiapay.me/43978/graine-d-impact-x0Mq4rqfb?redirect_url=${REDIRECT}`,
+    perks: ["tier0_perk1", "tier0_perk2"],
+    highlight: false,
+    free: true,
+    subKey: "tier0_sub",
+  },
+  {
+    amount: "tier1_amount",
+    title: "tier1_title",
+    type: "B2C",
+    link: `https://direct.kkiapay.me/43978/membre-pionnier-M0QfpxnWa?redirect_url=${REDIRECT}`,
+    perks: ["tier1_perk1", "tier1_perk2"],
+    highlight: false,
+  },
+  {
+    amount: "tier2_amount",
+    title: "tier2_title",
+    type: "B2C",
+    link: `https://direct.kkiapay.me/43978/pack-early-adopter-sGgfnWk-U?redirect_url=${REDIRECT}`,
+    perks: ["tier2_perk1", "tier2_perk2", "tier2_perk3"],
+    highlight: true,
+  },
+];
+
+const b2b = [
+  {
+    amount: "tier3_amount",
+    title: "tier3_title",
+    type: "B2B",
+    link: `https://direct.kkiapay.me/43978/partenaire-entreprise-oAjiJAFAH?redirect_url=${REDIRECT}`,
+    perks: ["tier3_perk1", "tier3_perk2", "tier3_perk3"],
+    highlight: false,
+  },
+  {
+    amount: "tier4_amount",
+    title: "tier4_title",
+    type: "B2B",
+    link: `https://direct.kkiapay.me/43978/sponsor-gold-250000-4qQrcdxjR?redirect_url=${REDIRECT}`,
+    perks: ["tier4_perk1", "tier4_perk2", "tier4_perk3"],
+    highlight: false,
+    badge: "badge_limited",
+  },
+];
+
+function Card({ tier, i }) {
+  const { t } = useTranslation();
+  return (
+    <div
+      className={`group relative flex flex-col rounded-3xl border p-8 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 ${
+        tier.highlight
+          ? "border-naka-cyan/20 bg-white shadow-[0_8px_30px_-12px_rgba(0,210,255,0.15)]"
+          : "border-black/[0.04] bg-white shadow-[0_2px_20px_-8px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)]"
+      }`}
+      style={{ transitionDelay: `${i * 80}ms` }}
+    >
+      {tier.highlight && (
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-naka-cyan px-4 py-1 text-[10px] font-medium uppercase tracking-[0.15em] text-naka-darkBlue">
+          {t("tiers.badge_recommended")}
+        </div>
+      )}
+      {tier.badge && (
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-naka-darkBlue px-4 py-1 text-[10px] font-medium uppercase tracking-[0.15em] text-white">
+          {t(`tiers.${tier.badge}`)}
+        </div>
+      )}
+
+      <div className="mb-3">
+        <span className="inline-block rounded-md bg-naka-text/5 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.15em] text-naka-text/50">
+          {t(`tiers.type_${tier.type.toLowerCase()}`)}
+        </span>
+      </div>
+
+      <h3 className="mb-4 text-lg font-semibold tracking-tight text-naka-darkBlue">
+        {t(`tiers.${tier.title}`)}
+      </h3>
+
+      <div className="mb-6">
+        <div className="text-3xl font-semibold tracking-tight text-naka-darkBlue">
+          {t(`tiers.${tier.amount}`)}
+        </div>
+        {tier.free ? (
+          <div className="mt-1 text-sm text-naka-text/40">
+            {t(`tiers.${tier.subKey}`)} {t("tiers.fcta")}
+          </div>
+        ) : (
+          <div className="mt-1 text-sm text-naka-text/40">{t("tiers.fcta")}</div>
+        )}
+      </div>
+
+      <ul className="flex-1 space-y-3">
+        {tier.perks.map((p) => (
+          <li key={p} className="flex items-start gap-3 text-sm text-naka-text/60">
+            <svg
+              className="mt-0.5 h-4 w-4 shrink-0 text-naka-cyan"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
+            {t(`tiers.${p}`)}
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-auto flex justify-start pt-6">
+        <a
+          href={withSource(tier.link)}
+          className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.98] ${
+            tier.highlight
+              ? "bg-naka-cyan text-naka-darkBlue"
+              : "border border-naka-cyan/30 bg-naka-cyan/5 text-naka-darkBlue hover:bg-naka-cyan/10"
+          }`}
+        >
+          {t("tiers.support")}
+          <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-naka-darkBlue/10">
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H9m10.5 0v10.5" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  );
+}
+
+export default function TierCards() {
+  const { t } = useTranslation();
+  return (
+    <ScrollReveal>
+      <section id="paliers" className="bg-surface px-5 py-24 md:px-8 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-16 text-center">
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.25em] text-naka-text/40">
+              {t("tiers.label")}
+            </p>
+            <h2 className="text-3xl font-semibold tracking-tight text-naka-darkBlue md:text-4xl">
+              {t("tiers.title")}
+            </h2>
+          </div>
+
+          <div className="mb-8 grid gap-6 md:grid-cols-3">
+            {b2c.map((tier, i) => (
+              <Card key={tier.title} tier={tier} i={i} />
+            ))}
+          </div>
+
+          <div className="mx-auto grid gap-6 md:w-2/3 md:grid-cols-2">
+            {b2b.map((tier, i) => (
+              <Card key={tier.title} tier={tier} i={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </ScrollReveal>
+  );
+}
