@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 const Accueil = lazy(() => import("./components/Accueil"));
+const About = lazy(() => import("./components/About"));
 const Entreprises = lazy(() => import("./components/Entreprises"));
 const Pilotes = lazy(() => import("./components/Pilotes"));
 const Soutenir = lazy(() => import("./components/Soutenir"));
@@ -32,6 +33,8 @@ export default function App() {
       <Suspense fallback={<PageFallback />}>
         <Routes>
         <Route path="/" element={<><Nav /><main><Accueil /></main><Footer /></>} />
+        <Route path="/a-propos" element={<><Nav /><main><About /></main><Footer /></>} />
+        <Route path="/about" element={<><Nav /><main><About /></main><Footer /></>} />
         <Route path="/entreprises" element={<><Nav /><main><Entreprises /></main><Footer /></>} />
         <Route path="/pilotes" element={<><Nav /><main><Pilotes /></main><Footer /></>} />
         <Route path="/soutenir" element={<><Nav /><main><Soutenir /></main><Footer /></>} />

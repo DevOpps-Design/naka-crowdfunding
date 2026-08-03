@@ -6,10 +6,11 @@ import LanguageSwitcher from "./LanguageSwitcher";
 export default function Nav() {
   const { t } = useTranslation();
   const location = useLocation();
-  const darkHeroPaths = ["/", "/entreprises", "/pilotes", "/soutenir", "/contact", "/blog"];
+  const darkHeroPaths = ["/", "/a-propos", "/entreprises", "/pilotes", "/soutenir", "/contact", "/blog"];
   const hasDarkHero = darkHeroPaths.includes(location.pathname);
   const links = [
     { label: t("nav.accueil"), to: "/" },
+    { label: t("nav.about"), to: "/a-propos" },
     { label: t("nav.entreprises"), to: "/entreprises" },
     { label: t("nav.pilotes"), to: "/pilotes" },
     { label: t("nav.soutenir"), to: "/soutenir" },

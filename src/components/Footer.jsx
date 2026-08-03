@@ -104,12 +104,12 @@ export default function Footer() {
             <div>
               <h4 className="mb-5 font-semibold text-white">{t("footer.naka_title")}</h4>
               <div className="flex flex-col gap-3">
-                <a
-                  href="/#a-propos"
+                <Link
+                  to="/a-propos"
                   className="text-sm text-white/50 transition-all duration-300 hover:translate-x-1 hover:text-white"
                 >
                   {t("footer.naka_about")}
-                </a>
+                </Link>
                 <Link
                   to="/soutenir"
                   className="text-sm text-white/50 transition-all duration-300 hover:translate-x-1 hover:text-white"
